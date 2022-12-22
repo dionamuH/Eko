@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+        background-image: url({{ url_for('static', filename='images/bla1.jpeg') }})
+        }
+        result {
+    color: #fff;
+    font-size: 14px;
+    transition: 0.3s;
+    }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<!--    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='/styles/style.css') }}">-->
+    <link rel= "stylesheet"  href= "{{ url_for('static', filename='/styles/style.css') }}">
+    <link rel= "stylesheet"  href= "{{ url_for('static', filename='/styles/main.css') }}">
+    <!-- <link rel='stylesheet' href='main.css'> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eko Housing</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo_details">
+            <i class='bx bx-fingerprint'></i>
+            <span class="logo_name">PredictiveModel</span>
+        </div>
+           <div>
+                <ul class="nav_list">
+                    <li>
+                        <a href="#">
+                            <i class='bx bx-info-circle' ></i>
+                            <span class="link_name">About</span>
+                        </a>
+                        <ul>
+                            <span class="tooltip">About The Model:
+                                <br>This predictive model was created
+                                <br> using data scraped from the
+                                <br>following websites:
+                                <br>nigeriapropertycentre.com &
+                                <br> privateproperty.com.
+                                <br>For information on how to get estimates,
+                                <br>please refer to the tabs listed below.
+                                <br>Data used to train this model
+                                <br>will not be updated to reflect
+                                <br>evolving trends as they occur.</span>
+                        </ul>
+                    </li>
+           </div>
+            <ul class="nav_links">
+                <li>
+                    <div class="icon_link">
+                        <a href="#">
+                            <i class='bx bx-location-plus' ></i>
+                            <span class="link_name">Location</span>
+                        </a>
+                        <i class='bx bx-chevron-down arrow'></i>
+                    </div>
+                    <ul class="sub_menu">
+                        <li><a class="link_name" href="#">Location</a></li>
+                        <li><a href="#">Input info:</a></li>
+                            <li><a href="#">Input 0 for Oshodi-Mafoluku</a></li>
+                            <li><a href="#">Input 1 for Abule Egba</a></li>
+                            <li><a href="#">Input 2 for Agbado Ijaiye</a></li>
+                            <li><a href="#">Input 3 for Agbara</a></li>
+                            <li><a href="#">Input 4 for Agege</a></li>
+                            <li><a href="#">Input 5 for Ajah</a></li>
+                            <li><a href="#">Input 6 for Alagbado</a></li>
+                            <li><a href="#">Input 7 for Alimosho</a></li>
+                            <li><a href="#">Input 8 for Allen Avenue</a></li>
+                            <li><a href="#">Input 9 for Apapa</a></li>
+                            <li><a href="#">Input 10 for Badagry</a></li>
+                            <li><a href="#">Input 11 for Ejigbo</a></li>
+                            <li><a href="#">Input 12 for Festac</a></li>
+                            <li><a href="#">Input 13 for Gbagada</a></li>
+                            <li><a href="#">Input 14 for Idimu</a></li>
+                            <li><a href="#">Input 15 for Ifako</a></li>
+                            <li><a href="#">Input 16 for Igando</a></li>
+                            <li><a href="#">Input 17 for Ijora Ebute-Metta</a></li>
+                            <li><a href="#">Input 18 for Iju</a></li>
+                            <li><a href="#">Input 19 for Iju Ishaga</a></li>
+                            <li><a href="#">Input 20 for Ikeja</a></li>
+                            <li><a href="#">Input 21 for Ikeja Adeniyi-Jones</a></li>
+                            <li><a href="#">Input 22 for Ikeja G.R.A</a></li>
+                            <li><a href="#">Input 23 for Ikorodu</a></li>
+                            <li><a href="#">Input 24 for Ikotun</a></li>
+                            <li><a href="#">Input 25 for Ikoyi</a></li>
+                            <li><a href="#">Input 26 for Irepo</a></li>
+                            <li><a href="#">Input 27 for Isolo</a></li>
+                            <li><a href="#">Input 28 for Isolo Ago-Palace</a></li>
+                            <li><a href="#">Input 29 for Isolo Jakande</a></li>
+                            <li><a href="#">Input 30 for Iyana Ipaja</a></li>
+                            <li><a href="#">Input 31 for Ketu Ikosi</a></li>
+                            <li><a href="#">Input 32 for Ketu Ogudu</a></li>
+                            <li><a href="#">Input 33 for Ketu Ojota</a></li>
+                            <li><a href="#">Input 34 for Ketu Shangisha</a></li>
+                            <li><a href="#">Input 35 for Lagos Island</a></li>
+                            <li><a href="#">Input 36 for Lekki</a></li>
+                            <li><a href="#">Input 37 for Maryland</a></li>
+                            <li><a href="#">Input 38 for Mushin</a></li>
+                            <li><a href="#">Input 39 for Ogba</a></li>
+                            <li><a href="#">Input 40 for Ojodu Berger</a></li>
+                            <li><a href="#">Input 41 for Oke Afa</a></li>
+                            <li><a href="#">Input 42 for Okota</a></li>
+                            <li><a href="#">Input 43 for Oniru</a></li>
+                            <li><a href="#">Input 44 for Opebi</a></li>
+                            <li><a href="#">Input 45 for Oregun</a></li>
+                            <li><a href="#">Input 46 for Oshodi</a></li>
+                            <li><a href="#">Input 47 for Oshodi Ajao</a></li>
+                            <li><a href="#">Input 48 for Surulere</a></li>
+                            <li><a href="#">Input 49 for Victoria Island</a></li>
+                            <li><a href="#">Input 50 for Yaba</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="icon_link">
+                        <a href="#">
+                            <i class='bx bx-building-house' ></i>
+                            <span class="link_name">Housing Type</span>
+                        </a>
+                        <i class='bx bx-chevron-down arrow'></i>
+                    </div>
+                    <ul class="sub_menu">
+                        <li><a class="link_name" href="#">Housing Type</a></li>
+                        <li><a href="#">Input info:</a></li>
+                        <li><a href="#">0 for duplex</a></li>
+                        <li><a href="#">1 for Flat/Apartment</a></li>
+                        <li><a href="#">2 for Mini Flat (Studio)</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="icon_link">
+                        <a href="#">
+                            <i class='bx bx-bed'></i>
+                            <span class="link_name">Bedrooms</span>
+                        </a>
+                        <i class='bx bx-chevron-down arrow'></i>
+                    </div>
+                    <ul class="sub_menu">
+                        <li><a class="link_name" href="#">Bedrooms</a></li>
+                        <li><a href="#">Input info:</a></li>
+                        <li><a href="#">Input range(s) 1-4</a></li>
+                        <li><a href="#">Min Value -> 1</a></li>
+                        <li><a href="#">Max Value -> 4</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="icon_link">
+                        <a href="#">
+                            <i class='bx bx-bath'></i>
+                            <span class="link_name">Bathrooms</span>
+                        </a>
+                        <i class='bx bx-chevron-down arrow'></i>
+                    </div>
+                    <ul class="sub_menu">
+                        <li><a class="link_name" href="#">Bathrooms</a></li>
+                        <li><a href="#">Input info:</a></li>
+                        <li><a href="#">Input range(s) 1-4</a></li>
+                        <li><a href="#">Min Value -> 1</a></li>
+                        <li><a href="#">Max Value -> 4</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="icon_link">
+                        <a href="#">
+                            <i class='bx bxs-user-plus'></i>
+                            <span class="link_name">Guest Toilet</span>
+                        </a>
+                        <i class='bx bx-chevron-down arrow'></i>
+                    </div>
+                    <ul class="sub_menu">
+                        <li><a class="link_name" href="#">Guest Toilet</a></li>
+                        <li><a href="#">Input info:</a></li>
+                        <li><a href="#">Input range(s) 0-2</a></li>
+                        <li><a href="#">Min Value -> 0</a></li>
+                        <li><a href="#">Max Value -> 2</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="icon_link">
+                        <a href="#">
+                            <i class='bx bxs-parking' ></i>
+                            <span class="link_name">Parking Space</span>
+                        </a>
+                        <i class='bx bx-chevron-down arrow'></i>
+                    </div>
+                    <ul class="sub_menu">
+                        <li><a class="link_name" href="#">Parking Space</a></li>
+                        <li><a href="#">Input info:</a></li>
+                        <li><a href="#">Input range(s) 0-4</a></li>
+                        <li><a href="#">Min Value -> 0</a></li>
+                        <li><a href="#">Max Value -> 4</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+    </div>
+        <section class="home_section">
+            <div class="home_content">
+                <i class='bx bx-menu' ></i>
+            </div>
+        </section>
+        </div>
+     <div class="container-fluid">
+                    <h1 class="mt-4">Housing Estimates in Lagos City Nigeria</h1>
+                    <p>Èkó ò ní bàjé!</p>
+                    <p>
+         <br>
+         <br>
+        <form action="{{ url_for('predict')}}" method="post">
+    	<input type="text" name="Housing Type" placeholder="Housing Type" required="required" />
+        <input type="text" name="Bedrooms" placeholder="Bedroom(s)" required="required" />
+        <br>
+        <br>
+		<input type="text" name="Bathrooms" placeholder="Bathroom(s)" required="required" />
+		<input type="text" name="Guest Toilet" placeholder="Guest Toilet(s)" required="required" />
+        <br>
+        <br>
+        <input type="text" name="Parking Space" placeholder="Parking Space(s)" required="required" />
+        <input type="text" name="District" placeholder="Location" required="required" />
+        <br>
+        <br>
+        <input type="submit" value ="Estimate" id ="estimate" >
+        </form>
+            <br>
+            <br>
+         <div class="result" align="center">
+            <p style="font-size:30px">{{ prediction_text }}</p>
+         </div>
+<!--                {{ prediction_text }}-->
+     </div>
+
+<footer id="author">
+  <p>Designed by Peace Edogun.</p>
+</footer>
+        </div>
+    
+    <script>
+    
+        let arrow = document.querySelectorAll(".arrow");
+        for (var i = 0; i < arrow.length; i++) {
+            arrow[i].addEventListener("click",(e)=>{
+            let arrowParent = e.target.parentElement.parentElement;
+            arrowParent.classList.toggle("showMenu");
+            });
+        }
+        
+        let sidebar = document.querySelector(".sidebar");
+        let sidebarBtn = document.querySelector(".bx-menu");
+        console.log(sidebarBtn);
+        sidebarBtn.addEventListener("click", ()=>{
+        sidebar.classList.toggle("close");
+        });   
+    </script>
+    
+</body>
+</html>
